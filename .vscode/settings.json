@@ -6,7 +6,7 @@
       },
     "objectscript.conn" :{
       "active": true,
-      "ns": "IRISAPP",
+      "ns": "LLMAGIC",
       "username": "_SYSTEM",
       "password": "SYS",
       "docker-compose": {
@@ -17,6 +17,7 @@
         "UnitTest Portal": "${serverUrl}/csp/sys/%25UnitTest.Portal.Home.cls?$NAMESPACE=IRISAPP"
       }
     },
-    "intersystems.testingManager.client.relativeTestRoot": "tests"
+    "intersystems.testingManager.client.relativeTestRoot": "tests",
+    "DockerRun.DisableDockerrc": true
 
 }

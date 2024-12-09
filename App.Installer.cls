@@ -5,8 +5,8 @@ Class App.Installer
 XData setup
 {
 <Manifest>
-  <Default Name="Namespace" Value="IRISAPP"/>
-  <Default Name="database" Value="irisapp"/>
+  <Default Name="Namespace" Value="LLMAGIC"/>
+  <Default Name="database" Value="llmagic"/>
   
   <Namespace Name="${Namespace}" Code="${Namespace}-CODE" Data="${Namespace}-DATA" Create="yes" Ensemble="1">
     <Configuration>

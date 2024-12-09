@@ -14,8 +14,8 @@ WORKDIR /home/irisowner/dev
 ##USER ${ISC_PACKAGE_MGRUSER}
 
 ARG TESTS=0
-ARG MODULE="dc-sample"
-ARG NAMESPACE="IRISAPP"
+ARG MODULE="dc-llmagic"
+ARG NAMESPACE="LLMAGIC"
 
 ## Embedded Python environment
 ENV IRISUSERNAME "_SYSTEM"
@@ -24,7 +24,13 @@ ENV IRISNAMESPACE $NAMESPACE
 ENV PYTHON_PATH=/usr/irissys/bin/
 ENV PATH "/usr/irissys/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/irisowner/bin"
 
+USER root
+RUN apt-get -y update; apt-get -y install curl
+RUN curl -fsSL https://ollama.com/install.sh | sh
+
+USER irisowner
 COPY .iris_init /home/irisowner/.iris_init
+
 
 RUN --mount=type=bind,src=.,dst=. \
     pip3 install -r requirements.txt && \
