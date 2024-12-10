@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Export generator="Cache" version="25">
-  <Document name="dc-sample.ZPM">
+  <Document name="llmagic.ZPM">
     <Module>
-      <Name>dc-sample</Name>
-      <Version>2.0.6</Version>
-      <Description>Basic InterSystems IRIS Development Template</Description>
+      <Name>llmagic</Name>
+      <Version>1.0.3</Version>
+      <Description>This is a starter set of Interop components to allow self hosting of Ollama models</Description>
+      <Keywords>ai ollama python </Keywords>
       <Packaging>module</Packaging>
       <SourcesRoot>src</SourcesRoot>
-      <Resource Name="dc.sample.PKG"/>
-      <UnitTest Name="/tests" Package="dc.sample.unittests" Phase="test"/>
-
     </Module>
   </Document>
 </Export>
