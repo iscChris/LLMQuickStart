@@ -3,7 +3,7 @@
   <Document name="llmagic.ZPM">
     <Module>
       <Name>llmagic</Name>
-      <Version>1.0.3</Version>
+      <Version>1.0.4</Version>
       <Description>This is a starter set of Interop components to allow self hosting of Ollama models</Description>
       <Keywords>ai ollama python </Keywords>
       <Packaging>module</Packaging>
